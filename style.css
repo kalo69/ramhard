@@ -62,65 +62,114 @@
 
 .hero-container {
     position: relative;
-    width: 804px;
-    height: 522px;
-    margin: 0 auto;
-    padding-top: 216px;
-}
-
-.hero-container .text-container {
-    position: relative;
+    display: flex;
+    display: grid;
+    gap: 40px;
 }
 
 .hero-container h1 {
     width: 670px;
-    height: 231px;
-
+    margin: 0 auto;
     
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 61px;
     line-height: 126.52%;
     /* or 77px */
     
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 233px;
     color: #FCFCFE;
 }
 
+.hero-container span {
+    color: var(--ram-green)
+}
+
+.repair-img {
+    position: absolute;
+    left: 823px;
+    top: 311px;
+    z-index: -1;
+    
+  
+}
+
+.repair-up {
+    position: absolute;
+    top: 240px;
+    left: 965PX;
+}
+
+.were-line {
+    position: absolute;
+    left: 277px;
+    top: 210px;
+  }
+
+
 .hero-container p {
-    width: 654px;
-    height: 46px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 126.52%;
-    /* or 23px */
-    
+    color:white;
+    font-size: 50px;
     text-align: center;
-    padding-top: 40px;
-    color: #C5D9D0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.hero-container button {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid green; 
-}
+@media only screen and (max-width: 1399px) {
+    .repair-img {
+        position: absolute;
+        left: 733px;
+        top: 311px;
+        z-index: -1;
+        
+      
+    }
+    
+    .repair-up {
+        position: absolute;
+        top: 240px;
+        left: 875px;
+    }
+  }
+  @media only screen and (max-width: 1199px) {
+    .repair-img {
+        position: absolute;
+        left: 733px;
+        top: 311px;
+        z-index: -1;
+        
+      
+    }
 
-.hero-container .btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .navbar .btn {
+        display: none;
+    }
+    
+    .repair-up {
+        position: absolute;
+        top: 240px;
+        left: 875px;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .repair-img {
+        position: absolute;
+        left: 723px;
+        top: 311px;
+        z-index: -1;
+        
+      
+    }
+
+    .navbar .btn {
+        display: none;
+    }
+    
+    .repair-up {
+        position: absolute;
+        top: 240px;
+        left: 0px;
+    }
   }
 
