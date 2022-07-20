@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ram-green: #22B022;
+    --ram-gray : #C5D9D0;
+    --ram-font: 'Inter';
+}
+
+.navbar .navbar-nav li a {
+    color: var(--ram-gray);
+    font-family: var(--ram-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    margin-right:34px;
+    text-align: center;
+
+    
+}
+
+.navbar .navbar-nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+.navbar .navbar-nav li a:hover  {
+    color: #22B022;
+
+}
+
+.navbar {
+    padding-top: 15px;
+}
+
+.navbar .navbar-brand {
+    color:white;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.navbar .btn {
+    background: var(--ram-green);
+    border-radius: 100px;
+    width: 181px;
+    height: 56px;
+    border: 0;
+    font-family: var(--ram-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color:white;
+}
+
+.hero-container {
+    position: relative;
+    width: 804px;
+    height: 522px;
+    margin: 0 auto;
+    padding-top: 216px;
+}
+
+.hero-container .text-container {
+    position: relative;
+}
+
+.hero-container h1 {
+    width: 670px;
+    height: 231px;
+
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 126.52%;
+    /* or 77px */
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FCFCFE;
+}
+
+.hero-container p {
+    width: 654px;
+    height: 46px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 126.52%;
+    /* or 23px */
+    
+    text-align: center;
+    padding-top: 40px;
+    color: #C5D9D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid green; 
+}
+
+.hero-container .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
