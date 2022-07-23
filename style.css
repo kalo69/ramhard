@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   cursor: url("/Images/cursor.svg"), auto;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -46,6 +47,31 @@ a:hover {
   text-align: center;
 }
 
+.navbar .nav-item .nav-link li a {
+  color: var(--ram-green);
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar .nav-item .nav-link li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar .nav-item .nav-link li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
   color: var(--ram-green);
 }
@@ -59,6 +85,12 @@ a:hover {
   line-height: 40px;
   margin-right: 34px;
   text-align: center;
+}
+
+.navbar .nav-item .nav-link:focus {
+  border: 0;
+  color: var(--ram-green);
+  border-color: #C5D9D0;
 }
 
 .navbar .navbar-nav ul {
@@ -94,6 +126,10 @@ a:hover {
   font-size: 18px;
   line-height: 24px;
   color: white;
+}
+
+.hero .remont {
+  color: var(--ram-green);
 }
 
 .repair-img {
@@ -198,6 +234,16 @@ a:hover {
 
 .hero h1::selection {
   background: #22B022;
+}
+
+.hero .remont::-moz-selection {
+  background: #22B022;
+  color: white;
+}
+
+.hero .remont::selection {
+  background: #22B022;
+  color: white;
 }
 
 @media only screen and (max-width: 1399px) {
