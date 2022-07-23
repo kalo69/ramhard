@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("/Images/cursor.svg"), auto;
+}
+
+:root {
+    --ram-green: #22B022;
+    --ram-gray : #C5D9D0;
+    --ram-font: 'Inter';
+}
+
+
+body {
+    cursor: url('Images/cursor.svg'), pointer;
+}
+
+a:hover {
+  cursor: url('Images/cursor.svg'), pointer;
+
+}
+
+.cursor {
+    position: fixed;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
+    mix-blend-mode: difference;
+    background-color: transparent;
+    z-index: 10000;
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    transition: all 300ms ease-out;
+    }
+
+.navbar .nav-item .nav-link{
+    color: white;
+    font-family: var(--ram-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    margin-right:34px;
+    text-align: center;
+
+    
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  color: var(--ram-green);
+}
+
+.navbar .nav-item .nav-link:hover{
+  color: var(--ram-gray);
+  font-family: var(--ram-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  margin-right:34px;
+  text-align: center;
+
+  
+}
+
+.navbar .navbar-nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+.navbar .navbar-nav li a:hover  {
+    color: #22B022;
+
+}
+
+.navbar {
+    padding-top: 15px;
+}
+
+.navbar .navbar-brand {
+    color:white;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.navbar .btn {
+    background: var(--ram-green);
+    border-radius: 100px;
+    width: 181px;
+    min-height: 56px;
+    border: 0;
+    font-family: var(--ram-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color:white;
+}
+
+
+
+.repair-img {
+    position: absolute;
+    left: 823px;
+    top: 311px;
+    z-index: -1;
+    
+  
+}
+
+.repair-up {
+    position: absolute;
+    top: 240px;
+    left: 965PX;
+}
+
+.were-line {
+    position: absolute;
+    left: 277px;
+    top: 210px;
+  }
+
+
+.hero {
+  text-align: center;
+  padding-top: 230px;
+}
+
+
+
+.btn-text {
+    text-align: center;    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: middle;
+
+    /* identical to box height, or 133% */
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    
+    color: #C5D9D0;
+}
+
+.btn-text-container {
+    display: inline;
+    padding: 10px;
+}
+
+.dollar {
+    margin-left: 10px;
+}
+
+.cta-arrow {
+    position: absolute;
+    left: 300px;
+    top: 515px;
+  }
+
+
+.hero-img {
+    margin: 0 auto;
+    display: flex;
+}
+  
+
+.hero {
+  display: grid;
+  gap:40px
+}
+
+.hero p {
+  max-width: 654px;
+  max-height: 46px;
+  left: 399px;
+  top: 575px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 126.52%;
+  
+  /* or 23px */
+  text-align: center;
+  margin: 0 auto;
+  color: #C5D9D0;
+  
+  
+}
+.hero h1 {
+  max-width: 730px;
+  max-height: 231px;
+  left: 391px;
+  top: 304px;
+  margin: 0 auto;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 126.52%;
+  
+  /* or 77px */
+  text-align: center;
+  
+  color: #FCFCFE;
+}
+
+.hero h1::selection {
+  background: #22B022;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1399px) {
+    .repair-img {
+        position: absolute;
+        left: 733px;
+        top: 311px;
+        z-index: -1;
+        
+      
+    }
+    
+    .repair-up {
+        position: absolute;
+        top: 240px;
+        left: 875px;
+    }
+  }
+  @media only screen and (max-width: 1199px) {
+    .repair-img {
+        position: absolute;
+        left: 733px;
+        top: 311px;
+        z-index: -1;
+        
+      
+    }
+
+    .navbar .btn {
+        display: none;
+    }
+    
+    .repair-up {
+        position: absolute;
+        top: 240px;
+        left: 875px;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .repair-img {
+        position: absolute;
+        left: 723px;
+        top: 311px;
+        z-index: -1;
+        
+      
+    }
+
+    .navbar .btn {
+        display: none;
+    }
+    
+    .repair-up {
+        position: absolute;
+        top: 240px;
+        left: 0px;
+    }
+  }
+
