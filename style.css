@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url("http://wuu.tonev.design/ramhard/Images/cursor.svg"), auto;
+  cursor: url("/Images/cursor.svg"), auto;
   scroll-behavior: smooth;
 }
 
@@ -11,7 +11,7 @@
   --ram-green: #22B022;
   --ram-gray: #C5D9D0;
   --ram-font: "Inter";
-  --ram-cursor: cursor: url("http://wuu.tonev.design/ramhard/Images/cursor.svg"), pointer;
+  --ram-cursor: cursor: url("Images/cursor.svg"), pointer;
 }
 
 a {
@@ -22,12 +22,16 @@ a:hover {
   text-decoration: none;
 }
 
+button:hover {
+  cursor: url("/Images/cursor.svg"), auto;
+}
+
 body {
-  cursor: url("http://wuu.tonev.design/ramhard/Images/cursor.svg"), auto;
+  cursor: url("/Images/cursor.svg"), auto;
 }
 
 a:hover {
-  cursor: url("http://wuu.tonev.design/ramhard/Images/cursor.svg"), pointer;
+  cursor: url("Images/cursor.svg"), pointer;
 }
 
 .cursor {
@@ -667,7 +671,7 @@ b::selection {
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  gap: 16px;
+  gap: 1rem;
   width: 373px;
   height: 294px;
 }
@@ -683,5 +687,212 @@ b::selection {
   display: block;
 }
 .process-col .pr-ar {
+  margin-top: 6.25rem;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 288px;
+  padding: 50px 0;
+  background: #313C42;
+}
+.about h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.938rem;
+  line-height: 120%;
+  /* or 56px */
+  color: #FFFFFF;
+  text-align: center;
+}
+.about h1 span {
+  color: #22B022;
+}
+.about p {
+  width: 631px;
+  height: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 140%;
+  margin-top: 20px;
+  /* or 25px */
+  text-align: center;
+  margin: 0 auto;
+  color: rgba(187, 206, 198, 0.63);
+}
+.about .about-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 12px;
+  width: 200px;
+  height: 52px;
+  background: #22B022;
+  border-radius: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  color: #FFFFFF;
+}
+.about .about-btn:hover {
+  border: 0;
+  box-shadow: inset 0 -3.25em 0 0 white;
+  color: #22B022;
+  cursor: url("http://wuu.tonev.design/ramhard/Images/cursor.svg");
+}
+
+.faq {
+  position: relative;
+  padding-top: 120px;
+}
+.faq h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 120%;
+  /* or 56px */
+  text-align: center;
+  color: #FFFFFF;
+}
+.faq h1 span {
+  color: #22B022;
+}
+.faq .faq-container {
   margin-top: 100px;
+}
+.faq .faq-container .accordion-item {
+  background: #313C42;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+  border-top: 0;
+  color: rgba(187, 206, 198, 0.63);
+}
+.faq .accordion {
+  border-top: 0;
+}
+.faq .accordion-header {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  border: 0;
+  /* identical to box height, or 30px */
+  color: #FFFFFF;
+}
+.faq .accordion-button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+  color: #FFFFFF;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+  background: #313C42;
+}
+.faq .accordion-button:hover {
+  cursor: url("/Images/cursor.svg"), auto;
+}
+.faq .accordion-button:after {
+  background-image: url("/Images/faq-arrow.svg") !important;
+}
+.faq .panel, .faq .panel-group .panel-heading + .panel-collapse > .panel-body {
+  border: none;
+  border-top: 0;
+}
+.faq .accordion-flush .accordion-item {
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  border-bottom-color: #313C42;
+  border-top: 0;
+}
+
+.call-cta {
+  margin-top: 120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 79px 0px;
+  gap: 32px;
+  height: 372px;
+  background: #22B022;
+  cursor: url("/Images/cursor-w.svg"), auto;
+}
+.call-cta h1,
+.call-cta p,
+.call-cta .col,
+.call-cta .row,
+.call-cta .container,
+.call-cta .call-cta:hover {
+  cursor: url("/Images/cursor-w.svg"), auto;
+}
+.call-cta h1 {
+  width: 742px;
+  height: 112px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 120%;
+  cursor: url("/Images/cursor-w.svg"), auto;
+  /* or 56px */
+  text-align: center;
+  margin: 0 auto;
+  color: #FFFFFF;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.call-cta .call-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 12px;
+  width: 200px;
+  height: 52px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  color: #22B022;
+  margin: 0 auto;
+  margin-top: 46px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }/*# sourceMappingURL=style.css.map */
