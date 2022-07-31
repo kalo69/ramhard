@@ -459,4 +459,150 @@ b::selection {
 .hero-img {
   margin-top: 7.5rem;
   width: 100%;
+}
+
+.logos {
+  padding-top: 120px;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100;
+}
+.slider::before, .slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide {
+  height: 50vh;
+  width: 150vw;
+}
+
+.zashto {
+  padding-top: 7.5rem;
+}
+.zashto .col .zashto-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.938rem;
+  line-height: 120%;
+  /* or 56px */
+  color: #FFFFFF;
+  text-align: center;
+  /* Inside auto layout */
+}
+.zashto .col span {
+  color: #22B022;
+}
+.zashto .col .zashto-p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 126.52%;
+  /* identical to box height, or 23px */
+  color: rgba(187, 206, 198, 0.63);
+  text-align: center;
+}
+.zashto .col .zashto-one-h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 126.52%;
+  /* identical to box height, or 51px */
+  color: #FFFFFF;
+}
+.zashto .col .zashto-one-p {
+  width: 410px;
+  height: 136px;
+  margin-top: 32px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+  color: rgba(187, 206, 198, 0.63);
+}
+.zashto .col .zashto-row {
+  position: relative;
+}
+.zashto .col .zashto-bak {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 300px;
+  /* or 420px */
+  color: #3C474B;
+  position: absolute;
+  z-index: -1;
+  top: -6rem;
+}
+
+.process {
+  padding-top: 120px;
+  position: relative;
+}
+.process h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.938rem;
+  line-height: 120%;
+  /* or 56px */
+  color: #FFFFFF;
+  text-align: center;
+}
+.process span {
+  color: #22B022;
+}
+.process p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 126.52%;
+  /* identical to box height, or 23px */
+  text-align: center;
+  color: rgba(187, 206, 198, 0.63);
 }/*# sourceMappingURL=style.css.map */
