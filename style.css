@@ -582,6 +582,9 @@ b::selection {
 .process {
   padding-top: 120px;
   position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .process h1 {
   font-family: "Inter";
@@ -596,6 +599,9 @@ b::selection {
 .process span {
   color: #22B022;
 }
+.process .row > * {
+  width: 20% !important;
+}
 .process p {
   font-family: "Inter";
   font-style: normal;
@@ -605,4 +611,77 @@ b::selection {
   /* identical to box height, or 23px */
   text-align: center;
   color: rgba(187, 206, 198, 0.63);
+}
+.process .number {
+  width: 78px;
+  height: 78px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+.process .number span {
+  left: 128px;
+  top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #22B022;
+}
+.process h5 {
+  width: 167px;
+  height: 48px;
+  padding-top: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 120%;
+  margin: 0 auto;
+  /* or 24px */
+  text-align: center;
+  padding-bottom: 16px;
+  color: #FFFFFF;
+}
+.process h6 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  /* or 22px */
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+  color: rgba(187, 206, 198, 0.63);
+}
+
+.process-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 373px;
+  height: 294px;
+}
+.process-col svg .row > * {
+  flex-shrink: 0;
+  width: 10%;
+  max-width: 20%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+.process-col svg {
+  display: block;
+}
+.process-col .pr-ar {
+  margin-top: 100px;
 }/*# sourceMappingURL=style.css.map */

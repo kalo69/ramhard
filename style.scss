@@ -632,6 +632,9 @@ $animationSpeed: 40s;
 .process {
   padding-top: 120px;
   position:relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 
   h1 {
     font-family: 'Inter';
@@ -651,6 +654,11 @@ $animationSpeed: 40s;
     color: $ram-green;
   }
 
+
+  .row > * {
+    width:20% !important;
+  }
+
   p {
     font-family: 'Inter';
     font-style: normal;
@@ -664,4 +672,97 @@ $animationSpeed: 40s;
     color: rgba(187, 206, 198, 0.63);
   }
 
+  .number {
+    width: 78px;
+    height: 78px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    position: relative;
+    margin: 0 auto;
+    
+
+    span {
+
+      left: 128px;
+      top: 20px;
+      
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 120%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $ram-green;
+      
+    }
+  }
+
+  h5 {
+    width: 167px;
+    height: 48px;
+    padding-top:16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 120%;
+    margin: 0 auto;
+    /* or 24px */
+    text-align: center;
+    padding-bottom:16px;
+    color: #FFFFFF;
+  }
+
+  h6 {
+
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    
+    /* or 22px */
+    text-align: center;
+    margin: 0 auto;
+    padding-top:1rem;
+    color: rgba(187, 206, 198, 0.63);
+    
+    
+  }
+
 }
+
+.process-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  
+  width: 373px;
+  height: 294px;
+
+
+  svg .row > * {
+    flex-shrink: 0;
+  width: 10%;
+  max-width: 20%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+    }
+
+    svg {
+      display: block;
+    }
+
+    .pr-ar {
+      margin-top:100px;
+    }
+}
+
+
