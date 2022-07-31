@@ -24,7 +24,6 @@ a:hover {
 
 body {
   cursor: --ram-cursor;
-  height: 2000px;
 }
 
 a:hover {
@@ -260,6 +259,16 @@ a:hover {
   background: #22B022;
 }
 
+b::-moz-selection {
+  background: #22B022;
+  color: white;
+}
+
+b::selection {
+  background: #22B022;
+  color: white;
+}
+
 .hero .remont::-moz-selection {
   background: #22B022;
   color: white;
@@ -323,6 +332,73 @@ a:hover {
   border: 1px solid white;
 }
 
+.animaciikabatko {
+  overflow: hidden;
+  height: 75px;
+  display: inline-grid;
+  position: relative;
+}
+
+.animaciikabatko b {
+  display: block;
+  -webkit-animation: example 9000ms ease infinite;
+          animation: example 9000ms ease infinite;
+  font-weight: 700;
+}
+
+@-webkit-keyframes example {
+  10% {
+    transform: translate(0px, -112%);
+  }
+  25% {
+    transform: translate(0px, -100%);
+  }
+  35% {
+    transform: translate(0px, -212%);
+  }
+  50% {
+    transform: translate(0px, -200%);
+  }
+  60% {
+    transform: translate(0px, -312%);
+  }
+  75% {
+    transform: translate(0px, -300%);
+  }
+  85% {
+    transform: translate(0px, -412%);
+  }
+  100% {
+    transform: translate(0px, -400%);
+  }
+}
+
+@keyframes example {
+  10% {
+    transform: translate(0px, -112%);
+  }
+  25% {
+    transform: translate(0px, -100%);
+  }
+  35% {
+    transform: translate(0px, -212%);
+  }
+  50% {
+    transform: translate(0px, -200%);
+  }
+  60% {
+    transform: translate(0px, -312%);
+  }
+  75% {
+    transform: translate(0px, -300%);
+  }
+  85% {
+    transform: translate(0px, -412%);
+  }
+  100% {
+    transform: translate(0px, -400%);
+  }
+}
 .hero-lines-up {
   position: absolute;
   top: -1.5rem;
@@ -379,4 +455,8 @@ a:hover {
     right: 5rem;
     bottom: 3rem;
   }
+}
+.hero-img {
+  margin-top: 7.5rem;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
