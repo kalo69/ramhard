@@ -23,7 +23,7 @@ a:hover {
 }
 
 body {
-  cursor: --ram-cursor;
+  cursor: url("http://wuu.tonev.design/ramhard/Images/cursor.svg"), auto;
 }
 
 a:hover {
