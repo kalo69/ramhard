@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url("/Images/cursor.svg"), auto;
+  cursor: url("http://wuu.tonev.design/ramhard/Images/cursor.svg"), auto;
   scroll-behavior: smooth;
 }
 
@@ -11,7 +11,7 @@
   --ram-green: #22B022;
   --ram-gray: #C5D9D0;
   --ram-font: "Inter";
-  --ram-cursor: cursor: url("Images/cursor.svg"), pointer;
+  --ram-cursor: cursor: url("http://wuu.tonev.design/ramhard/Images/cursor.svg"), pointer;
 }
 
 a {
@@ -27,7 +27,7 @@ body {
 }
 
 a:hover {
-  cursor: url("Images/cursor.svg"), pointer;
+  cursor: url("http://wuu.tonev.design/ramhard/Images/cursor.svg"), pointer;
 }
 
 .cursor {
