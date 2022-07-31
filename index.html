@@ -26,37 +26,45 @@
 
 
     <header>
-      <nav class="navbar navbar-light navbar-expand-md bg-transparent justify-content-md-center justify-content-start">
-        <a class="navbar-brand d-md-none d-inline" href=""></a>
-        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ramhard</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="nav-link" href="#_"><a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="">Ramhard</a></a> 
-        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
-            <ul class="navbar-nav mx-auto text-md-center text-left">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Начало</a> 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">За Нас</a>
-                </li>
-                <li class="nav-item my-auto">
-                    
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Услуги</a> 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Процес</a> 
-                </li>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " href="#">Начало</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Защо нас ?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Процес</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ЧЗВ</a>
+              </li>
+              <li class="nav-item">
+                <a href="tel:+359999977000">
+                  <button class="btn nav-btn"><svg class="phone" width="22" height="22" viewBox="0 0 22 22" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.83333C16.0545 1.83333 20.1667 5.9455 20.1667 11C20.1667 16.0545 16.0545 20.1667 11 20.1667C5.9455 20.1667 1.83333 16.0545 1.83333 11C1.83333 5.9455 5.9455 1.83333 11 1.83333ZM11 0C4.92525 0 0 4.92525 0 11C0 17.0748 4.92525 22 11 22C17.0748 22 22 17.0748 22 11C22 4.92525 17.0748 0 11 0ZM15.125 15.8684L13.5117 12.7545L12.5657 13.2174C11.539 13.7152 9.449 9.63325 10.4528 9.09517L11.4079 8.62492L9.8065 5.5L8.84125 5.97667C5.54033 7.69725 10.7818 17.8851 14.1579 16.3423L15.125 15.8684Z" fill=""/>
+                    </svg>
+                    </button>
+                </a>
+              </li>
             </ul>
-            <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
-                <li class="nav-item"><button class="btn hero-button">Обади ни се</button></a> </li>
-            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
     
     </header>
+
+
 
 
     <div class="hero">
@@ -64,16 +72,59 @@
         <div class="row">
           <div class="col ">
             <h1>
+              <svg class="hero-lines-up" width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40.5317 2C40.5317 4.37459 40.7135 6.74278 40.7135 9.11871C40.7135 10.6535 40.7135 12.1883 40.7135 13.7231" stroke="#FCFCFE" stroke-width="3" stroke-linecap="round"/>
+                <path d="M11.7241 9.63367C12.165 10.6151 12.8389 11.4813 13.4912 12.3297C15.7723 15.297 18.3188 18.0299 21.1652 20.4632C23.8665 22.7724 26.8392 24.71 29.6269 26.9003" stroke="#FCFCFE" stroke-width="3" stroke-linecap="round"/>
+                <path d="M19.0849 41.8042C13.609 40.0619 7.70844 39.3947 2 38.987" stroke="#FCFCFE" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                
               Помагаме за <span class="remont">ремонта</span>
+              <svg class="repair-line" width="234" height="36" viewBox="0 0 234 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.30981 2.78224C22.8929 2.78224 43.4562 2.60646 64.0367 2.28489C118.261 1.43764 172.518 2.31943 226.726 3.80458C228.2 3.84497 229.678 3.8578 231.147 3.99799C232.76 4.15204 232.414 4.51298 231.092 4.77165C221.588 6.6299 211.472 6.6746 201.858 7.47945C162.207 10.7991 122.675 14.5575 82.8808 15.7134C77.6081 15.8665 72.3185 15.9196 67.0484 16.1831C62.3829 16.4164 76.3901 16.369 81.0572 16.5699C96.1983 17.2217 111.321 18.4006 126.371 20.1896C131.504 20.7996 137.305 21.5246 142.452 22.5934C143.929 22.8999 147.568 23.5043 146.514 24.5828C143.506 27.6623 134.785 28.5055 131.013 29.3629C125.926 30.5197 125.269 30.5304 120.68 31.4076C119.797 31.5762 117.433 31.5051 118.082 32.126C119.095 33.0952 120.834 32.6859 122.227 32.8444C125.869 33.2588 130.107 33.5912 133.721 33.7838C139.816 34.1087 145.912 34.1154 152.013 34.1154" stroke="#22B022" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                
+                
               на вашия смартфон или таблет
+              <svg class="hero-up" width="85" height="48" viewBox="0 0 85 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1C7.40655 1 18.1358 6.50747 14.3189 14.4933C13.9624 15.239 14.2932 14.458 14.5871 14.1067C16.5841 11.7192 19.3362 9.87646 22.2431 8.8292C28.8292 6.45646 35.9968 7.67916 39.5384 14.1357C42.6622 19.8304 42.8158 25.8712 41.1865 32.0268C40.9315 32.9902 40.5928 33.8803 40.1804 34.7815C39.6806 35.8739 41.1372 32.5663 41.7806 31.5532C43.4844 28.8703 45.4513 26.4517 47.7214 24.2363C51.2976 20.7462 54.9244 17.1633 58.7981 14.01C61.0939 12.1411 63.6985 10.3276 66.5594 9.46713C66.7378 9.4135 68.3764 8.89081 67.9201 9.35114" stroke="#FCFCFE" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M51 4C47.3283 4.26522 44.7415 8.41787 43 11" stroke="#FCFCFE" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M54 32C54.9984 30.6494 57.2379 29.8808 58.7903 29.2267C60.835 28.3652 62.763 28 65 28" stroke="#FCFCFE" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M55 42.0484C60.1492 41.9015 65.1786 42.0705 70.3007 42.8126C75.0724 43.5039 79.8119 44.4199 84 47" stroke="#FCFCFE" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                
+                
             </h1>
             <p>
-              Самата болка е любовта, основната система за съхранение. Смях и подходяща за моите пенати меката прическа.
+              Вашият сервиз за висококачествени ремонти на смартфони в Хасково и област Хасково.
             </p>
+
+            <svg class="cta-arrow" width="102" height="112" viewBox="0 0 102 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.8768 9.68639C15.2896 13.2534 12.6434 18.6678 10.763 23.2101C5.62026 35.6328 3.80252 51.8028 8.7878 64.5328C12.0583 72.884 21.2589 79.326 29.8373 73.4349C37.6392 68.077 42.0285 56.2698 42.8309 47.297C43.3334 41.6784 41.4563 34.9902 34.4481 35.8306C31.9482 36.1304 30.0338 37.9569 28.6087 39.8926C24.5608 45.391 23.3863 52.5334 24.0492 59.1996C26.092 79.7397 44.1973 90.3139 62.5105 95.3643C74.2427 98.5998 86.4396 100.178 98.6052 99.3025" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M93.9548 96.3513C95.174 97.0075 96.4228 97.6127 97.6581 98.2401C97.9559 98.3914 101.004 99.5815 100.776 100.117C100.524 100.71 98.1039 100.639 97.6131 100.703C94.9672 101.051 92.3756 101.73 89.7886 102.351" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              
+              
+              
+            
+            <a href="tel:099997700">
+              <button class="btn hero-btn"><svg class="phone" width="22" height="22" viewBox="0 0 22 22" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1.83333C16.0545 1.83333 20.1667 5.9455 20.1667 11C20.1667 16.0545 16.0545 20.1667 11 20.1667C5.9455 20.1667 1.83333 16.0545 1.83333 11C1.83333 5.9455 5.9455 1.83333 11 1.83333ZM11 0C4.92525 0 0 4.92525 0 11C0 17.0748 4.92525 22 11 22C17.0748 22 22 17.0748 22 11C22 4.92525 17.0748 0 11 0ZM15.125 15.8684L13.5117 12.7545L12.5657 13.2174C11.539 13.7152 9.449 9.63325 10.4528 9.09517L11.4079 8.62492L9.8065 5.5L8.84125 5.97667C5.54033 7.69725 10.7818 17.8851 14.1579 16.3423L15.125 15.8684Z" fill=""/>
+                </svg>
+                </button>
+            </a>
+
+            <svg class="linii-otdolu" width="42" height="47" viewBox="0 0 42 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.1792 45.3413C2.1792 42.7557 2.00006 40.177 2.00006 37.59C2.00006 35.9188 2.00006 34.2476 2.00006 32.5764" stroke="#FCFCFE" stroke-width="3" stroke-linecap="round"/>
+              <path d="M30.5728 37.0293C30.1382 35.9607 29.474 35.0175 28.8311 34.0937C26.5828 30.8627 24.073 27.8869 21.2674 25.2374C18.605 22.7231 15.6751 20.6133 12.9275 18.2283" stroke="#FCFCFE" stroke-width="3" stroke-linecap="round"/>
+              <path d="M23.3176 1.99997C28.7147 3.89711 34.5304 4.62353 40.1567 5.0675" stroke="#FCFCFE" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              
+
           </div>
         </div>
       </div>
     </div>
+
     
     <script>
       
@@ -114,3 +165,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+<!--
+                <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Начало</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Защо нас ?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Процес</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ЧЗВ</a>
+                </li>
+                <li class="nav-item">
+                  <button class="btn nav-btn"><svg class="phone" width="22" height="22" viewBox="0 0 22 22" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.83333C16.0545 1.83333 20.1667 5.9455 20.1667 11C20.1667 16.0545 16.0545 20.1667 11 20.1667C5.9455 20.1667 1.83333 16.0545 1.83333 11C1.83333 5.9455 5.9455 1.83333 11 1.83333ZM11 0C4.92525 0 0 4.92525 0 11C0 17.0748 4.92525 22 11 22C17.0748 22 22 17.0748 22 11C22 4.92525 17.0748 0 11 0ZM15.125 15.8684L13.5117 12.7545L12.5657 13.2174C11.539 13.7152 9.449 9.63325 10.4528 9.09517L11.4079 8.62492L9.8065 5.5L8.84125 5.97667C5.54033 7.69725 10.7818 17.8851 14.1579 16.3423L15.125 15.8684Z" fill=""/>
+                    </svg>
+                    Обади ни се</button>
+                </li>
+              </ul>
+-->

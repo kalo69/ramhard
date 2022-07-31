@@ -6,15 +6,26 @@
     scroll-behavior: smooth;
 }
 
+
 :root {
     --ram-green: #22B022;
     --ram-gray : #C5D9D0;
     --ram-font: 'Inter';
+    --ram-cursor: cursor: url('Images/cursor.svg'), pointer;
+
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
 
 body {
-    cursor: url('Images/cursor.svg'), pointer;
+    cursor: --ram-cursor;
+    height:2000px
 }
 
 a:hover {
@@ -46,7 +57,6 @@ a:hover {
     font-size: 18px;
     line-height: 40px;
     margin-right:34px;
-    text-align: center;
 
     
 }
@@ -88,7 +98,6 @@ a:hover {
   font-size: 18px;
   line-height: 40px;
   margin-right:34px;
-  text-align: center;
 
   
 }
@@ -114,18 +123,21 @@ a:hover {
     padding-top: 15px;
 }
 
+
+
 .navbar .navbar-brand {
     color:white;
     font-family: 'Poppins';
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
+    transition: 0.2s ease;
 }
 
-.navbar .btn {
+.navbar .nav-btn {
     background: var(--ram-green);
     border-radius: 100px;
-    width: 181px;
+    width: 211px;
     min-height: 56px;
     border: 0;
     font-family: var(--ram-font);
@@ -134,8 +146,27 @@ a:hover {
     font-size: 18px;
     line-height: 24px;
     color:white;
+    cursor: var(--ram-cursor)
 }
 
+.navbar .nav-btn::after {
+  content:'Обади ни се';
+}
+
+.navbar .nav-btn:hover::after {
+  content: '0878 441 312';
+}
+
+.navbar .nav-btn:hover {
+    background: white;
+    color: var(--ram-green);
+
+    svg {
+      width: 22px;
+      height: 22px;      
+      fill: var(--ram-green);
+    }
+}
 
 .hero .remont {
     color: var(--ram-green);
@@ -157,11 +188,7 @@ a:hover {
     left: 965PX;
 }
 
-.were-line {
-    position: absolute;
-    left: 277px;
-    top: 210px;
-  }
+
 
 
 .hero {
@@ -176,7 +203,7 @@ a:hover {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 24px;
     vertical-align: middle;
 
@@ -188,6 +215,10 @@ a:hover {
     color: #C5D9D0;
 }
 
+.btn {
+  padding: 10px;
+}
+
 .btn-text-container {
     display: inline;
     padding: 10px;
@@ -197,11 +228,7 @@ a:hover {
     margin-left: 10px;
 }
 
-.cta-arrow {
-    position: absolute;
-    left: 300px;
-    top: 515px;
-  }
+
 
 
 .hero-img {
@@ -211,16 +238,25 @@ a:hover {
   
 
 .hero {
-  display: grid;
-  gap:40px
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative
+  
+
 }
 
+
+
+
+
 .hero p {
+  padding-top: 40px;
   max-width: 654px;
   max-height: 46px;
-  left: 399px;
-  top: 575px;
-  
+
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -230,7 +266,8 @@ a:hover {
   /* or 23px */
   text-align: center;
   margin: 0 auto;
-  color: #C5D9D0;
+  color: white;
+  padding-bottom: 80px;
   
   
 }
@@ -243,7 +280,7 @@ a:hover {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 61px;
+  font-size: 3.813rem;
   line-height: 126.52%;
   
   /* or 77px */
@@ -261,91 +298,136 @@ a:hover {
     color: white;
   }
 
+.phone {
+  margin-right: 0.625rem
+
+}
+
+.hero-btn {
+
+  margin-top: 40px;
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  
+  width: 201px;
+  height: 52px;
+  
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  margin: 0 auto;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  cursor: var(--ram-cursor);
+
+}
+
+.hero-btn::after {
+  content:'Обади ни се';
+
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  
+  /* identical to box height, or 133% */
+  
+  color: #FFFFFF;
+  
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+
+.hero-btn:hover {
+  cursor: var(--ram-cursor);
+}
+
+.hero-btn:hover::after {
+  content: '0878 441 312';
+}
+
+
+.hero-btn:hover {
+  border: 1px solid white;
+}
+
+.hero-lines-up {
+  position:absolute;
+  top:-1.5rem;
+  left:12rem
+
+}
 
 
 
+.hero-up {
+  position: absolute;
+  top: 0.4rem;
+  right: 11rem;
+}
+.repair-line {
+  position: absolute;
+  top: 4.1rem;
+  right: 15rem;
+}
 
+.cta-arrow {
+  position: absolute;
+  left:11.5rem;
+  top: 17rem;
+}
 
+.linii-otdolu {
+  position:absolute;
+  right:11rem;
+  bottom:3rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 1399px) {
-    .repair-img {
-        position: absolute;
-        left: 733px;
-        top: 311px;
-        z-index: -1;
-        
-      
-    }
-    
-    .repair-up {
-        position: absolute;
-        top: 240px;
-        left: 875px;
-    }
+@media only screen and (max-width: 1199px) {
+  .hero-lines-up {
+    position:absolute;
+    top:-1.5rem;
+    left:6rem
+  
   }
-  @media only screen and (max-width: 1199px) {
-    .repair-img {
-        position: absolute;
-        left: 733px;
-        top: 311px;
-        z-index: -1;
-        
-      
-    }
 
-    .navbar .btn {
-        display: none;
-    }
-    
-    .repair-up {
-        position: absolute;
-        top: 240px;
-        left: 875px;
-    }
+  
+  .hero-up {
+    position: absolute;
+    top: 0.4rem;
+    right: 5.5rem;
   }
-
-  @media only screen and (max-width: 991px) {
-    .repair-img {
-        position: absolute;
-        left: 723px;
-        top: 311px;
-        z-index: -1;
-        
-      
-    }
-
-    .navbar .btn {
-        display: none;
-    }
-    
-    .repair-up {
-        position: absolute;
-        top: 240px;
-        left: 0px;
-    }
+  .repair-line {
+    position: absolute;
+    top: 4.1rem;
+    right: 9.5rem;
   }
-
+  
+  .cta-arrow {
+    position: absolute;
+    left:6rem;
+    top: 17rem;
+  }
+  
+  .linii-otdolu {
+    position:absolute;
+    right:5rem;
+    bottom:3rem;
+  }
+  
+}
