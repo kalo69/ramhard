@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url("/Images/cursor.svg"), auto;
+    cursor: url("http://wuu.tonev.design/ramhard-images/Images/cursor.svg"), auto;
     scroll-behavior: smooth;
 }
 
@@ -11,7 +11,7 @@
     --ram-green: #22B022;
     --ram-gray : #C5D9D0;
     --ram-font: 'Inter';
-    --ram-cursor: cursor: url('Images/cursor.svg'), pointer;
+    --ram-cursor: cursor: url("http://wuu.tonev.design/ramhard-images/Images/cursor.svg"), pointer;
 
 }
 
@@ -26,17 +26,18 @@ a:hover {
 }
 
 button:hover {
-  cursor: url("/Images/cursor.svg"), auto;
+  cursor: url("http://wuu.tonev.design/ramhard-images/Images/cursor.svg"), auto;
 
 }
 
 body {
-  cursor: url("/Images/cursor.svg"), auto;
+  cursor: url("http://wuu.tonev.design/ramhard-images/Images/cursor.svg"), auto;
+  overflow-x: hidden;
 
 }
 
 a:hover {
-  cursor: url('Images/cursor.svg'), pointer;
+  cursor: url("http://wuu.tonev.design/ramhard-images/Images/cursor.svg"), auto;
 
 }
 
@@ -718,7 +719,9 @@ $animationSpeed: 40s;
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 120%;
-    margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     /* or 24px */
     text-align: center;
     padding-bottom:16px;
@@ -737,11 +740,11 @@ $animationSpeed: 40s;
     /* or 22px */
     text-align: center;
     margin: 0 auto;
-    padding-top:1rem;
     color: rgba(187, 206, 198, 0.63);
     
     
   }
+
 
 }
 
@@ -778,6 +781,7 @@ $animationSpeed: 40s;
 .about {
   position: relative;
 
+  margin-top: 7.5em;
   width: 100%;
   height: 288px;
 
@@ -856,7 +860,7 @@ $animationSpeed: 40s;
     border: 0;
     box-shadow: inset 0 -3.25em 0 0 white;
     color: $ram-green;
-    cursor: url("http://wuu.tonev.design/ramhard/Images/cursor.svg");
+    cursor: url("http://wuu.tonev.design/ramhard-images/Images/cursor.svg");
 
   }
 }
@@ -944,12 +948,12 @@ $animationSpeed: 40s;
 
 
   .accordion-button:hover {
-    cursor: url("/Images/cursor.svg"), auto;
+    cursor: url("http://wuu.tonev.design/ramhard-images/Images/cursor.svg"), auto;
 
   }
 
   .accordion-button:after {
-    background-image: url("/Images/faq-arrow.svg") !important;
+    background-image: url("http://wuu.tonev.design/ramhard-images/Images/faq-arrow.svg") !important;
   }
   .panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
     border: none;
@@ -1016,6 +1020,10 @@ $animationSpeed: 40s;
     order: 0;
     flex-grow: 0;
   }
+
+  [data-aos^="fade"][data-aos^="fade"].aos-animate {
+    cursor: url("/Images/cursor-w.svg"), auto;
+  }
   
   .call-btn {
     display: flex;
@@ -1025,7 +1033,7 @@ $animationSpeed: 40s;
     padding: 10px;
     gap: 12px;
     
-    width: 200px;
+    width: 211px;
     height: 52px;
     
     background: #FFFFFF;
