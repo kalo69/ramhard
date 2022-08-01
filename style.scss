@@ -143,6 +143,7 @@ a:hover {
     transition: 0.2s ease;
 }
 
+
 .navbar .nav-btn {
     background: var(--ram-green);
     border-radius: 100px;
@@ -1051,5 +1052,152 @@ $animationSpeed: 40s;
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+}
+
+
+footer {
+  margin-top: 5rem;
+
+   .navbar-brand {
+    color:white;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    transition: 0.2s ease;
+  }
+
+  .footer-heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 100%;
+    
+    /* identical to box height, or 16px */
+    margin-bottom: 24px;
+    color: #FFFFFF;
+    
+    
+  }
+
+  ul {
+    margin-top: 24px;
+    list-style-type: none;
+    padding: 0px;
+  }
+
+  li {
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  margin-top: 8px;
+
+  /* identical to box height, or 24px */
+
+  color: #FFFFFF;
+  span {
+    color: $ram-green;
+    font-weight: 500;
+  }
+
+}
+
+    a {
+      color: #FFFFFF;
+
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    .col-md-3 {
+      width: 300px;
+    }
+
+    .row {
+      width:100%;
+    }
+
+    #froter {
+      display: flex;                  /* establish flex container */
+      flex-direction: row;            /* default value; can be omitted */
+      flex-wrap: nowrap;              /* default value; can be omitted */
+      justify-content: space-between; /* switched from default (flex-start, see below) */
+      background-color: lightyellow;
+      .copy {
+
+        
+        /* Text/Small/Normal */
+
+        
+        
+        /* Inside auto layout */
+
+      }
+
+      
+    }
+}
+
+
+#container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 105px;
+  border-top: 1px solid #BBBBBB;
+}
+
+#container > div {
+  width: 279px;
+  margin-left: 80px;
+  margin-right: 80px
+}
+
+.copy {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  
+  /* identical to box height, or 21px */
+  
+  color: #FFFFFF;
+}
+
+.izrabotka {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  
+  /* identical to box height, or 20px */
+  text-align: center;
+  
+  color: #FFFFFF;
+
+  b {
+    color: #B9E2B8; 
+  }
+
+
+}
+
+#container {
+  svg {
+    text-align: center;
+  }
+
+  svg:hover {
+    fill: white;
   }
 }
