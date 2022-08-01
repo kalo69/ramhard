@@ -657,13 +657,13 @@ b::selection {
   color: #FFFFFF;
 }
 .process h6 {
+  text-align: center;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 140%;
   /* or 22px */
-  text-align: center;
   margin: 0 auto;
   color: rgba(187, 206, 198, 0.63);
 }
@@ -690,6 +690,9 @@ b::selection {
 }
 .process-col .pr-ar {
   margin-top: 6.25rem;
+}
+.process-col .pr-ar2 {
+  margin-left: 27px;
 }
 
 .about {
@@ -1011,4 +1014,182 @@ footer #froter .copy {
 }
 #container svg:hover {
   fill: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero h1 {
+    font-size: h1;
+  }
+  .zashto .col .zashto-one-h1 {
+    font-size: 2rem;
+  }
+  .zashto .col .zashto-one-h {
+    font-size: 1.5px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .process .number {
+    width: 70px;
+    height: 70px;
+  }
+  .navbar .nav-item .nav-link {
+    font-size: calc(18px - 0.5%);
+  }
+  .navbar .nav-btn {
+    width: 200px;
+  }
+  .cursor {
+    display: none;
+  }
+}
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: 400px;
+  }
+  body .hero h1 {
+    width: 376px;
+    height: 119px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 126.52%;
+    /* or 40px */
+    text-align: center;
+    color: #FCFCFE;
+  }
+  body .hero p {
+    width: 316px;
+    height: 39px;
+    margin-bottom: 24px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126.52%;
+    /* or 20px */
+    text-align: center;
+    color: #FFFFFF;
+  }
+  body .animaciikabatko {
+    height: 35px;
+  }
+  body .hero button {
+    width: 192px;
+    height: 52px;
+    font-size: 18px;
+  }
+  body svg {
+    display: none;
+  }
+  body .hero-img {
+    width: 316.39px;
+    height: 294.14px;
+  }
+  body .slider img {
+    height: 100px;
+    width: 100px;
+    margin-right: 8px;
+  }
+  body .slider {
+    width: 100%;
+  }
+  .zashto .col .zashto-title {
+    width: 377px;
+    height: 114px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .zashto .col .zashto-p {
+    width: 354px;
+    height: 20px;
+    margin-top: 12px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126.52%;
+    /* or 20px */
+    text-align: center;
+    color: rgba(187, 206, 198, 0.63);
+    margin: 0 auto;
+  }
+  .zashto .col .zashto-col img {
+    width: 388px;
+    height: 285.12px;
+  }
+  .kur {
+    display: flex;
+    flex-direction: column;
+  }
+  .zashto-img {
+    width: 388px;
+    height: 285.12px;
+  }
+  .test {
+    display: none;
+  }
+  .zashto-one-h1 {
+    width: 352px;
+    height: 40px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 126.52%;
+    /* or 40px */
+    color: #FFFFFF;
+  }
+  [data-aos^=fade][data-aos^=fade].aos-animate {
+    margin-top: 80px;
+  }
+  .zashto-one-p {
+    width: 385px;
+    height: 136px;
+    left: 1px;
+    top: 170.88px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    color: rgba(187, 206, 198, 0.63);
+  }
+  .process h1 {
+    width: 251px;
+    height: 38px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    margin: 0 auto;
+    /* or 38px */
+    color: #FFFFFF;
+  }
+  .process p {
+    width: 364px;
+    height: 46px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 126.52%;
+    /* or 23px */
+    text-align: center;
+    color: rgba(187, 206, 198, 0.63);
+    margin-top: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
